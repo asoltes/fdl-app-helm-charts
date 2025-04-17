@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: file-stream-app-ingress
+  name: {{ .Values.name }}-ingress
   namespace: {{ .Values.namespace }}
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: {{ .Values.ingress.entrypoints }}
@@ -17,7 +17,7 @@ spec:
             pathType: {{ .Values.ingress.pathType }}
             backend:
               service:
-                name: file-stream-app-service
+                name: {{ .Values.name }}-service
                 port:
                   number: 80
 {{- end }}
