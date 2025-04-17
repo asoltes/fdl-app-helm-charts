@@ -1,8 +1,8 @@
-# file-stream-app
+# fdl-app
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: v3.3.0](https://img.shields.io/badge/AppVersion-v3.3.0-informational?style=flat-square)
 
-A Helm chart for the file-stream-app
+A Helm chart for the fdl-app
 
 ## Values
 
