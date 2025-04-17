@@ -1,0 +1,37 @@
+replicaCount: 2
+
+image:
+  repository: asoltes/file-download-stream
+  tag: v3.3.0
+  pullPolicy: Always
+
+namespace: file-download-app
+
+awsSecretName: aws-credentials
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+ingress:
+  enabled: true
+  className: traefik
+  host: dl.andrestrek.com
+  entrypoints: web
+  middlewares: file-stream-app-forward-auth@kubernetescrd
+  path: /
+  pathType: Prefix
+
+service:
+  port: 80
+  targetPort: 80
+
+middleware:
+  forwardAuth:
+    address: https://httpbin.org/basic-auth/user/passwd
+
+
