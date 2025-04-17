@@ -21,7 +21,7 @@ affinity: {}
 ingress:
   enabled: true
   className: traefik
-  host: dl.andrestrek.com
+  host: dltest.andrestrek.com
   entrypoints: web
   middlewares: fdl-app-forward-auth@kubernetescrd
   path: /
