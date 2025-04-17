@@ -17,7 +17,7 @@ A Helm chart for the fdl-app
 | ingress.enabled | bool | `true` |  |
 | ingress.entrypoints | string | `"web"` |  |
 | ingress.host | string | `"dl.andrestrek.com"` |  |
-| ingress.middlewares | string | `"file-stream-app-forward-auth@kubernetescrd"` |  |
+| ingress.middlewares | string | `"fdl-app-forward-auth@kubernetescrd"` |  |
 | ingress.path | string | `"/"` |  |
 | ingress.pathType | string | `"Prefix"` |  |
 | middleware.forwardAuth.address | string | `"https://httpbin.org/basic-auth/user/passwd"` |  |

@@ -23,7 +23,7 @@ ingress:
   className: traefik
   host: dl.andrestrek.com
   entrypoints: web
-  middlewares: file-stream-app-forward-auth@kubernetescrd
+  middlewares: fdl-app-forward-auth@kubernetescrd
   path: /
   pathType: Prefix
 
