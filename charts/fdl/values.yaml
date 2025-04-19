@@ -14,7 +14,6 @@ ingress:
   enabled: true
   className: traefik
   host: dltest.andrestrek.com
-  # middlewares: fdl-app-forward-auth@kubernetescrd
   path: /
   pathType: Prefix
 
