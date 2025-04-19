@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  fdl:
+  - apiVersion: v2
+    appVersion: 3.3.0
+    created: "2025-04-19T21:47:49.185125825+08:00"
+    description: A Helm chart for the fdl-app
+    digest: 008c0a9d6cec5f91c7c5ac632ac5cbcf16f5dffa17954d184cbc137b0ebdaccd
+    name: fdl
+    urls:
+    - https://asoltes.github.io/fdl-app-helm-charts/fdl-0.1.1.tgz
+    version: 0.1.1
+generated: "2025-04-19T21:47:49.184823689+08:00"
