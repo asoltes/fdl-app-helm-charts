@@ -10,20 +10,11 @@ image:
 namespace: file-download-app
 awsSecretName: aws-credentials
 
-resources: {}
-
-nodeSelector: {}
-
-tolerations: []
-
-affinity: {}
-
 ingress:
   enabled: true
   className: traefik
   host: dltest.andrestrek.com
-  entrypoints: web
-  middlewares: fdl-app-forward-auth@kubernetescrd
+  # middlewares: fdl-app-forward-auth@kubernetescrd
   path: /
   pathType: Prefix
 

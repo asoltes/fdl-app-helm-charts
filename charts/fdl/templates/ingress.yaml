@@ -5,8 +5,8 @@ metadata:
   name: {{ .Values.name }}-ingress
   namespace: {{ .Values.namespace }}
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: {{ .Values.ingress.entrypoints }}
-    traefik.ingress.kubernetes.io/router.middlewares: {{ .Values.ingress.middlewares }}
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.middlewares: {{ .Values.name }}-forward-auth@kubernetescrd
 spec:
   ingressClassName: {{ .Values.ingress.className }}
   rules:
